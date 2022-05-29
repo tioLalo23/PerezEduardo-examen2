@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.table-scroll{
+  height: 95vh;
+  overflow-y: scroll;
+}
+
+.bg-nav{
+  background-color:lightblue;
+}
+
+.bg-tab{
+  background-color: lightgreen;
+}
