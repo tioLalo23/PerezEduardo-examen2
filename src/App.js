@@ -1,7 +1,5 @@
 import './App.css';
 import {useState, useEffect} from 'react';
-import jsonMX from './thMX.json';
-import jsonUS from './thUS.json';
 
 const axios = require('axios').default;
 
@@ -34,7 +32,7 @@ function App() {
       <nav class="navbar navbar-expand-lg bg-nav">
         <div class="container-fluid align-items-center align-middle">
             <div className='col-md-8'>
-              <h1 className='my-auto'>Noticias internacionales</h1>
+              <h1 className='my-auto'>Noticias Internacionales</h1>
             </div>
             <div className='col-md-2'>
               <p className='my-auto'>Selecciona un país:</p>
@@ -53,10 +51,10 @@ function App() {
         </div>
       </nav>
       <div class='container my-2'>
-        <div className='container table-scroll border border-dark border-2'>
+        <div className='container table-scroll border border-dark border-2 bg-tab'>
           {
             resultado.map((data) => (
-              <div className='row m-2 py-2 border border-dark rounded' key={data.title}>
+              <div className='row m-2 py-2 border border-dark rounded bg-row' key={data.title}>
                 <div className='col-md-9'>
                   <div className='row'>
                     <div className='col-md-12'>
